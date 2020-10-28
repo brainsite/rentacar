@@ -12,6 +12,7 @@ class RentU(AbstractUser):
     USERNAME_FIELD = 'email'
     email = models.EmailField(_('Email address'), unique=True)
     REQUIRED_FIELDS = []  # removes email from REQUIRED_FIELDS
+    #ToDo подумать над языками
     CATEGORY_CHOICES = (
         ('RU', 'Русский'),
         ('EN', 'English'),)
