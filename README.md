@@ -1,13 +1,13 @@
 # rentacar
 Тестовое задание для собеседования.
 
-Рабочую версию можно проверит по адресу https://brainsite.ru
+- Рабочую версию можно проверит по адресу https://brainsite.ru
  
-API сайта
+#API сайта
  
-Добавление пользователя: https://brainsite.ru/api/add_user/
-Список пользователейс их машинами: https://brainsite.ru/api/users/
-Просмотр и редактирование пользователя: https://brainsite.ru/api/users/<id>  где <id> это ID пользователя
+- Добавление пользователя: https://brainsite.ru/api/add_user/
+- Список пользователейс их машинами: https://brainsite.ru/api/users/
+- Просмотр и редактирование пользователя: https://brainsite.ru/api/users/<id>  где <id> это ID пользователя
 
 # Задание
 Python + Django
