@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/django/rentacar_n/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'core.RentU'
 
@@ -145,9 +145,8 @@ REST_FRAMEWORK = {
 }
 
 
-# BEGIN ANSIBLE MANAGED BLOCK
+# Import Local settings
 try:
     from .local_settings import *
 except ImportError as e:
     pass
-# END ANSIBLE MANAGED BLOCK
