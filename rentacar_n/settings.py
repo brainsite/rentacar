@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0gix#*m^nlgox^pnw$x*ge++rmowf)p8u3erx5!_nh8_n(9d2t'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'rentacar_n.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'renta_n',
-        'USER': 'django',
-        'PASSWORD': '34t3t545g3f4f3',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
     }
 }
 
 DEFAULT_FROM_EMAIL='rent@brainsite.ru'
 EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_HOST_PASSWORD = 'RentaCar123'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_HOST_USER = 'rent@brainsite.ru'
 EMAIL_PORT = '465'
 EMAIL_USE_SSL=True
@@ -143,3 +143,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',  # <-- And here
     ],
 }
+
+
+# BEGIN ANSIBLE MANAGED BLOCK
+try:
+    from .local_settings import *
+except ImportError as e:
+    pass
+# END ANSIBLE MANAGED BLOCK
